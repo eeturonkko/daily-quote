@@ -12,7 +12,6 @@ export async function load({ fetch }) {
 		}
 	});
 	const quote: Quote[] = await response.json();
-	console.log(quote);
 	return {
 		quote: quote[0].quote,
 		author: quote[0].author
