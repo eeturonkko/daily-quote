@@ -1,6 +1,8 @@
 <script>
-   import * as Card from "$lib/components/ui/card";
-   import { getDate } from "$lib/utils";
+  import { getDate } from "$lib/utils";
+  import * as Card from "$lib/components/ui/card";
+  import Button from "./ui/button/button.svelte";
+
    const today = getDate();
 </script>
 
@@ -15,5 +17,6 @@
   <Card.Footer class="flex flex-col gap-1">
     <strong>Author</strong>
     <p>Steve Jobs</p>
+    <Button variant="link" class="text-white">Add to favorites</Button>
   </Card.Footer>
 </Card.Root>
