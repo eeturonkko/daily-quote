@@ -11,7 +11,10 @@ export async function load({ fetch }) {
 			'x-api-key': apiKey
 		}
 	});
-	const data: Quote = await response.json();
-	console.log(data);
-	return { data };
+	const quote: Quote[] = await response.json();
+	console.log(quote);
+	return {
+		quote: quote[0].quote,
+		author: quote[0].author
+	};
 }
