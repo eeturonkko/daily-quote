@@ -1,8 +1,9 @@
 import { zod } from 'sveltekit-superforms/adapters';
+import { fail } from '@sveltejs/kit';
+import { toast } from 'svelte-sonner';
 import { formSchema } from './formSchema';
 import { superValidate } from 'sveltekit-superforms';
 import type { PageServerLoad, Actions } from './$types';
-import { fail } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async () => {
 	return {
@@ -11,15 +12,19 @@ export const load: PageServerLoad = async () => {
 };
 
 export const actions: Actions = {
-	default: async (event) => {
+	test: async (event) => {
 		const form = await superValidate(event, zod(formSchema));
+		const { firstName, lastName, email, message } = form.data;
+
 		if (!form.valid) {
 			return fail(400, {
 				form
 			});
 		}
-		return {
-			form
-		};
+
+		console.log(
+			`First Name: ${firstName} Last Name: ${lastName} Email: ${email} Message: ${message}`
+		);
+		toast('Form submitted successfully!');
 	}
 };

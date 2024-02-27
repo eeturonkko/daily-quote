@@ -15,7 +15,7 @@
 	const { form: formData, enhance } = form;
 </script>
 
-<form method="POST" use:enhance>
+<form method="POST" action="?/test" use:enhance>
 	<div class="mt-4 flex gap-3">
 		<Form.Field {form} name="firstName" class="text-start">
 			<Form.Control let:attrs>
