@@ -7,12 +7,12 @@
 	export let author: string;
 </script>
 
-<Card.Root class="flex max-h-[400px] w-72 flex-col items-center bg-black text-white">
+<Card.Root class="flex max-h-[400px] w-72 flex-col items-center border-gray-900 ">
 	<Card.Header>
 		<Card.Title>Today's quote</Card.Title>
 		<Card.Description>{today}</Card.Description>
 	</Card.Header>
-	<Card.Content class="text-pretty">
+	<Card.Content class="text-pretty font-semibold">
 		<p>{quote}</p>
 	</Card.Content>
 	<Card.Footer class="flex flex-col gap-1">
