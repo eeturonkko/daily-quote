@@ -5,6 +5,9 @@ dotenv.config();
 
 export async function load({ fetch }) {
 	const apiKey = process.env.API_KEY;
+	if (!apiKey) {
+		throw new Error('API key is not set');
+	}
 	const url = 'https://api.api-ninjas.com/v1/quotes?category=success';
 	const response = await fetch(url, {
 		headers: {
