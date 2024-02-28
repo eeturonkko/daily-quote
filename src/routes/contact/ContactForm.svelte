@@ -7,7 +7,6 @@
 	import { type SuperValidated, type Infer, superForm } from 'sveltekit-superforms';
 
 	export let data: SuperValidated<Infer<FormSchema>>;
-
 	const form = superForm(data, {
 		validators: zodClient(formSchema)
 	});
@@ -15,7 +14,7 @@
 	const { form: formData, enhance } = form;
 </script>
 
-<form method="POST" action="?/test" use:enhance>
+<form method="POST" action="?/sendMessage" use:enhance>
 	<div class="mt-4 flex gap-3">
 		<Form.Field {form} name="firstName" class="text-start">
 			<Form.Control let:attrs>
