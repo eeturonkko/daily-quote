@@ -1,6 +1,8 @@
 /** @type {import('./$types').PageServerLoad} */
 import dotenv from 'dotenv';
 import type { Quote } from '$lib/types/types';
+import type { Actions } from './$types';
+import { supabase } from '$lib/supabaseClient';
 dotenv.config();
 
 export async function load({ fetch }) {
@@ -24,3 +26,11 @@ export async function load({ fetch }) {
 		throw new Error('Failed to fetch quote');
 	}
 }
+
+export const actions: Actions = {
+	favorite: async (event) => {
+		//TODO When favorite button is clicked, add quote to favorites
+		console.log(event);
+		console.log(supabase);
+	}
+};
