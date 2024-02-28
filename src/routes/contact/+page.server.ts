@@ -1,6 +1,5 @@
 import { zod } from 'sveltekit-superforms/adapters';
 import { fail } from '@sveltejs/kit';
-import { toast } from 'svelte-sonner';
 import { formSchema } from './formSchema';
 import { superValidate } from 'sveltekit-superforms';
 import type { PageServerLoad, Actions } from './$types';
@@ -25,6 +24,5 @@ export const actions: Actions = {
 		console.log(
 			`First Name: ${firstName} Last Name: ${lastName} Email: ${email} Message: ${message}`
 		);
-		toast('Form submitted successfully!');
 	}
 };

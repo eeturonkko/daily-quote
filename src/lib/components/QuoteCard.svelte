@@ -18,7 +18,8 @@
 	<Card.Footer class="flex flex-col gap-1">
 		<strong>Author</strong>
 		<p>{author}</p>
-
-		<Button variant="link" class="text-white">Add to favorites</Button>
+		<form action="?/favorite" method="post">
+			<Button variant="link">Add to favorites</Button>
+		</form>
 	</Card.Footer>
 </Card.Root>
