@@ -2,6 +2,7 @@
 	import { getDate } from '$lib/utils';
 	import * as Card from '$lib/components/ui/card';
 	import Button from './ui/button/button.svelte';
+	import { enhance } from '$app/forms';
 	const today = getDate();
 	export let quote: string;
 	export let author: string;
@@ -18,7 +19,7 @@
 	<Card.Footer class="flex flex-col gap-1">
 		<strong>Author</strong>
 		<p>{author}</p>
-		<form method="POST" action="?/favorite">
+		<form method="POST" action="?/favorite" use:enhance>
 			<input type="hidden" name="quote" value={quote} />
 			<input type="hidden" name="author" value={author} />
 			<Button type="submit" variant="link">Add to favorites</Button>
