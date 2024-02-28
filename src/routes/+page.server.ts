@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import type { Quote } from '$lib/types/types';
 import type { Actions } from './$types';
 import { supabase } from '$lib/supabaseClient';
+import { redirect } from '@sveltejs/kit';
 dotenv.config();
 
 export async function load({ fetch }) {
@@ -28,9 +29,18 @@ export async function load({ fetch }) {
 }
 
 export const actions: Actions = {
-	favorite: async (event) => {
-		//TODO When favorite button is clicked, add quote to favorites
-		console.log(event);
-		console.log(supabase);
+	favorite: async ({ request }) => {
+		const data = await request.formData();
+		const quote = data.get('quote');
+		const author = data.get('author');
+		const { error } = await supabase.from('favorites').insert([{ quote, author }]);
+		if (error) {
+			return {
+				status: 500,
+				body: error
+			};
+		} else {
+			redirect(303, '/favorites');
+		}
 	}
 };

@@ -19,6 +19,8 @@
 		<strong>Author</strong>
 		<p>{author}</p>
 		<form method="POST" action="?/favorite">
+			<input type="hidden" name="quote" value={quote} />
+			<input type="hidden" name="author" value={author} />
 			<Button type="submit" variant="link">Add to favorites</Button>
 		</form>
 	</Card.Footer>
