@@ -13,20 +13,6 @@
 			</p>
 		</article>
 		<article class="flex flex-col gap-2">
-			<h2 class="text-3xl font-bold md:text-4xl">Conformance status</h2>
-			<p class="f text-sm md:text-lg">
-				The <a
-					class="text-blue-500 underline"
-					target="_blank"
-					href="https://www.w3.org/WAI/standards-guidelines/wcag/"
-					>Web Content Accessibility Guidelines (WCAG)</a
-				> defines requirements for designers and developers to improve accessibility for people with
-				disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA. Daily
-				Quote is partially conformant with WCAG 2.1 level AA. Partially conformant means that some parts
-				of the content do not fully conform to the accessibility standard.
-			</p>
-		</article>
-		<article class="flex flex-col gap-2">
 			<h2 class="text-3xl font-bold md:text-4xl">Feedback</h2>
 			<p class="f text-sm md:text-lg">
 				We welcome your feedback on the accessibility of Daily Quote. Please let us know if you
@@ -36,6 +22,28 @@
 				<li>Phone: 555-555-5555</li>
 				<li>E-mail: ronkko.erwd@gmail.com</li>
 				<li>Contact us <a class="text-blue-500 underline" href="/contact">here</a></li>
+			</ul>
+		</article>
+		<article class="flex flex-col gap-2">
+			<h2 class="text-3xl font-bold md:text-4xl">Technical specifications</h2>
+			<p class="f text-sm md:text-lg">
+				Accessibility of Daily Quote relies on the following technologies to work:
+			</p>
+			<ul class="text-sm md:text-lg">
+				<li>HTML</li>
+				<li>WAI-ARIA</li>
+				<li>CSS (Tailwind)</li>
+				<li>JavaScript</li>
+				<li>SvelteKit (JavaScript Framework)</li>
+			</ul>
+		</article>
+		<article class="flex flex-col gap-2">
+			<h2 class="text-3xl font-bold md:text-4xl">Assessment approach</h2>
+			<p class="f text-sm md:text-lg">
+				Daily Quote assessed the accessibility by the following approaches:
+			</p>
+			<ul class="text-sm md:text-lg">
+				<li>Following Web Content Accessibility Guidelines (WCAG)</li>
 			</ul>
 		</article>
 	</section>
