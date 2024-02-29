@@ -3,7 +3,10 @@
 </svelte:head>
 
 <main class="mt-16 flex flex-col gap-8">
-	<h2 class="text-center text-4xl font-semibold md:text-5xl">About Daily Quote</h2>
+	<section class="flex items-center gap-6">
+		<h2 class="text-center text-4xl font-semibold md:text-5xl">About Daily Quote</h2>
+		<img class="w-1/16 mt-2 h-8 md:mt-4" src="/about.png" alt="about icon" />
+	</section>
 	<article class="flex flex-col gap-2">
 		<h2 class="text-3xl font-bold md:text-4xl">Our mission</h2>
 		<p class="text-sm md:text-lg">
