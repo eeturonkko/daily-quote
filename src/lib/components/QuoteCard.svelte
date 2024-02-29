@@ -8,7 +8,10 @@
 	export let author: string;
 </script>
 
-<Card.Root class="flex max-h-[400px] w-72 flex-col items-center border-gray-900 ">
+<Card.Root
+	class="flex max-h-[400px] w-72 flex-col items-center border-gray-900"
+	aria-label="Daily Inspirational Quote"
+>
 	<Card.Header>
 		<Card.Title>Today's quote</Card.Title>
 		<Card.Description>{today}</Card.Description>

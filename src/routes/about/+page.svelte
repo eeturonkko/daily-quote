@@ -1,7 +1,8 @@
-<script lang="ts">
-</script>
+<svelte:head>
+	<title>Daily Quote | About</title>
+</svelte:head>
 
-<section class="mt-16 flex flex-col gap-8">
+<main class="mt-16 flex flex-col gap-8">
 	<h2 class="text-center text-4xl font-semibold md:text-5xl">About Daily Quote</h2>
 	<article class="flex flex-col gap-2">
 		<h2 class="text-3xl font-bold md:text-5xl">Our mission</h2>
@@ -29,6 +30,12 @@
 	<article class="flex w-1/2 flex-col gap-2">
 		<h2 class="text-3xl font-bold md:text-5xl">Contact</h2>
 		<p class="text-pretty">Questions? Feedback?</p>
-		<p>Please feel free to <a class="text-blue-500 underline" href="/contact">contact me</a></p>
+		<p>
+			Please feel free to <a
+				href="/contact"
+				class="text-blue-500 underline"
+				aria-label="Contact me for questions or feedback">contact me</a
+			>.
+		</p>
 	</article>
-</section>
+</main>
