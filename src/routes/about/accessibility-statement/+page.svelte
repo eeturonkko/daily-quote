@@ -6,7 +6,7 @@
 	<section class="flex flex-col gap-4">
 		<article class="flex flex-col gap-2">
 			<h2 class="text-2xl font-bold md:text-4xl">Accessibility statement</h2>
-			<p class="text-sm font-medium md:text-lg">
+			<p class="f text-sm md:text-lg">
 				Daily Quote is committed to ensuring digital accessibility for people with disabilities. We
 				are continually improving the user experience for everyone, and applying the relevant
 				accessibility standards.
@@ -14,7 +14,7 @@
 		</article>
 		<article class="flex flex-col gap-2">
 			<h2 class="text-3xl font-bold md:text-4xl">Conformance status</h2>
-			<p class="text-sm font-medium md:text-lg">
+			<p class="f text-sm md:text-lg">
 				The <a
 					class="text-blue-500 underline"
 					target="_blank"
@@ -28,7 +28,7 @@
 		</article>
 		<article class="flex flex-col gap-2">
 			<h2 class="text-3xl font-bold md:text-4xl">Feedback</h2>
-			<p class="text-sm font-medium md:text-lg">
+			<p class="f text-sm md:text-lg">
 				We welcome your feedback on the accessibility of Daily Quote. Please let us know if you
 				encounter accessibility barriers on Daily Quote:
 			</p>
