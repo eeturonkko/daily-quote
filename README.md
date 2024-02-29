@@ -1,38 +1,68 @@
-# create-svelte
+# Daily Quote
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Welcome to Daily Quote, a web application designed to inspire and motivate users by delivering a new quote every day. Built with SvelteKit and leveraging Supabase for data storage, this project prioritizes accessibility, ensuring a seamless experience for users with screen readers.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Daily Inspiration:** Users receive a new quote each day, aimed at inspiring and motivating them.
+- **Accessibility First:** Designed with accessibility in mind, the site is fully navigable and usable with screen readers, adhering to WCAG guidelines.
+- **Responsive Design:** Crafted to provide an optimal viewing experience across a wide range of devices.
+- **Supabase Integration:** Utilizes Supabase for robust, scalable backend data storage.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Technology Stack
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- **Frontend:** SvelteKit - A framework for building highly interactive web applications.
+- **Backend/Data Storage:** Supabase - An open-source Firebase alternative that provides database storage, real-time subscriptions, authentication, and more.
+- **Accessibility:** Best practices and tools ensuring compliance with WCAG standards.
 
-## Developing
+## Getting Started
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Prerequisites
 
-```bash
-npm run dev
+Before you begin, ensure you have the following installed:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- Node.js (v14.x or later)
+- npm/yarn
 
-## Building
+### Installation
 
-To create a production version of your app:
+1. Fork the repository:
 
-```bash
-npm run build
-```
+   ```bash
+   git clone https://github.com/eeturonkko/daily-quote.git
 
-You can preview the production build with `npm run preview`.
+   ```
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+2. Navigate to the project directory:
+
+   ```bash
+   cd daily-quote
+
+   ```
+
+3. Install dependencies:
+
+   ```bash
+    npm install
+
+   ```
+
+4. Create a .env file in the root directory and add your Supabase URL and Anon Key:
+
+   ```bash
+   API_KEY="ninja-api-key"
+   VITE_PUBLIC_SUPABASE_URL="https://something.supabase.co"
+   VITE_PUBLIC_SUPABASE_ANON_KEY="eyJhb......"
+
+   ```
+
+5. Run the development server:
+
+   ```bash
+   npm run dev
+
+   ```
+
+### Accessibility
+
+This project is committed to maintaining high accessibility standards, ensuring content is accessible to people with disabilities. We strive to follow the Web Content Accessibility Guidelines (WCAG) and welcome any contributions that improve the site's accessibility.
