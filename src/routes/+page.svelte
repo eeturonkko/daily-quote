@@ -11,8 +11,8 @@
 
 <main class="mt-16 flex flex-col items-center gap-8 p-8 text-center">
 	<section class="flex flex-col gap-2">
-		<h2 class="text-2xl font-semibold md:text-5xl">Discover Daily Inspiration</h2>
-		<p class="text-xs font-medium md:text-lg">
+		<h2 class="text-4xl font-semibold md:text-5xl">Discover Daily Inspiration</h2>
+		<p class="text-md font-medium md:text-lg">
 			Receive a new quote every day to uplift and motivate.
 		</p>
 	</section>
